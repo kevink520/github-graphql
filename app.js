@@ -44,4 +44,4 @@ app.get('/data', async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log('Server ready'));
+app.listen(process.env.PORT || 3000, () => console.log('Server ready'));
